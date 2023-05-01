@@ -91,7 +91,6 @@ To run tests, run the following command:
  npx eslint .
  npm init -y
 ```
-. Open [http://localhost:8080](http://localhost:3000) to view it in the browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
