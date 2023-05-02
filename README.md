@@ -53,6 +53,7 @@ This is a quick start react  project .
 ### Key Features <a name="key-features"></a>
 
 - I Used react documents.
+- I Used props react in my component.
 
 # 💻 Getting Started <a name="getting-started"></a>
 
