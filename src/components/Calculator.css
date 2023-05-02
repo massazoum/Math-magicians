@@ -1,0 +1,31 @@
+body {
+  font-family: 'poppins', sans-serif;
+}
+
+.main {
+  margin: 0;
+}
+
+button {
+  width: 80px;
+  height: 60px;
+  background-color: honeydew;
+}
+
+.zero {
+  width: 160px;
+}
+
+.affichage {
+  background-color: rgb(149, 147, 147);
+  height: 30px;
+  width: 315px;
+  padding-right: 5px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: end;
+}
+
+.ColorBtn {
+  background-color: rgb(242, 138, 64);
+}
