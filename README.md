@@ -33,7 +33,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖  Math-magicians <a name="about-project"></a>
-This is a quick start react  project .
+This is a calculator project bult by using react in the goal to learn the react library
 
 ## 🛠 Built With <a name="built-with"></a>
 <ul>
@@ -54,6 +54,8 @@ This is a quick start react  project .
 
 - I Used react documents.
 - I Used props react in my component.
+- I Used state react in my component.
+
 
 # 💻 Getting Started <a name="getting-started"></a>
 
