@@ -12,12 +12,8 @@ export default function Affiche() {
     } else if (value === '%') {
       setDisplay((prev) => prev / 100);
     } else if (value === '=') {
-      try {
-        const result = eval(display);
-        setDisplay(result);
-      } catch (error) {
-        setDisplay('Error');
-      }
+      const result = eval(display);
+      setDisplay(result);
     } else {
       setDisplay((prev) => prev + value);
     }
@@ -39,7 +35,7 @@ export default function Affiche() {
         <button
           className="ColorBtn"
           type="button"
-          onClick={() => handleClick('÷')}
+          onClick={() => handleClick('/')}
         >
           ÷
         </button>
@@ -57,7 +53,7 @@ export default function Affiche() {
         <button
           className="ColorBtn"
           type="button"
-          onClick={() => handleClick('x')}
+          onClick={() => handleClick('*')}
         >
           x
         </button>
