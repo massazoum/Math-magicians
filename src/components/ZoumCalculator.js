@@ -1,27 +1,24 @@
 import './Calculator.css';
 import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 
 export default function Affiche() {
-  const [display, setDisplay] = useState('');
+  const [calculatorValue, setCalculatorValue] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
   const handleClick = (value) => {
-    if (value === 'AC') {
-      setDisplay('');
-    } else if (value === '+/-') {
-      setDisplay((prev) => prev * -1);
-    } else if (value === '%') {
-      setDisplay((prev) => prev / 100);
-    } else if (value === '=') {
-      const result = eval(display);
-      setDisplay(result);
-    } else {
-      setDisplay((prev) => prev + value);
-    }
+    const newValue = calculate(calculatorValue, value);
+    setCalculatorValue(newValue);
   };
+
+  const displayValue = calculatorValue.next || calculatorValue.total || '0';
 
   return (
     <div>
-      <div className="affichage">{display}</div>
+      <div className="affichage">{displayValue}</div>
       <div>
         <button type="button" onClick={() => handleClick('AC')}>
           AC
@@ -35,7 +32,7 @@ export default function Affiche() {
         <button
           className="ColorBtn"
           type="button"
-          onClick={() => handleClick('/')}
+          onClick={() => handleClick('÷')}
         >
           ÷
         </button>
@@ -53,7 +50,7 @@ export default function Affiche() {
         <button
           className="ColorBtn"
           type="button"
-          onClick={() => handleClick('*')}
+          onClick={() => handleClick('x')}
         >
           x
         </button>
