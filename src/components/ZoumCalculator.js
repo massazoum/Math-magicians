@@ -17,7 +17,7 @@ export default function Affiche() {
   const displayValue = calculatorValue.next || calculatorValue.total || '0';
 
   return (
-    <div>
+    <div className="Calculatrice">
       <div className="affichage">{displayValue}</div>
       <div>
         <button type="button" onClick={() => handleClick('AC')}>

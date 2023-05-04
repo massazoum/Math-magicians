@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkcyan;
+  color: aliceblue;
+  font-size: xx-large;
+  padding: 20px;
+}
+
+.itemNav {
+  display: flex;
+  margin-right: 20px;
+  column-gap: 5vw;
+}
+
+.btnNav {
+  width: auto;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.quote {
+  font-size: large;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 5px 0 #000000bf;
+  -webkit-box-shadow: 10px 10px 5px 0 #000000bf;
+  -moz-box-shadow: 10px 10px 5px 0 #000000bf;
+}
+
+.quote span {
+  font-weight: bold;
+}
