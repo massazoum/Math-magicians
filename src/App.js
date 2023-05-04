@@ -1,5 +1,5 @@
 import Affiche from './components/ZoumCalculator';
-import Nav from './components/quote';
+import { Nav, DisplayQuote } from './components/quote';
 import './components/Calculator.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
 
     <div className="main">
       <Nav />
+      <DisplayQuote />
       <Affiche />
     </div>
 
