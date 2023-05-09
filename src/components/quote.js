@@ -1,22 +1,12 @@
+// import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import './quote.css';
-
-export function Nav() {
-  return (
-    <header>
-      <div>Math magicians</div>
-      <div className="itemNav">
-        <div><button className="btnNav" type="button">Calculator</button></div>
-        <div><button className="btnNav" type="button">Quote</button></div>
-      </div>
-    </header>
-  );
-}
+// import Affiche from './ZoumCalculator';
 
 const category = 'happiness';
 const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
 
-export function DisplayQuote() {
+export default function DisplayQuote() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [results, setResults] = useState(null);
@@ -64,8 +54,20 @@ export function DisplayQuote() {
     );
   }
 
+  const styles = {
+    quote: {
+      fontSize: 'large',
+      marginTop: '30vh',
+      width: '100%',
+      height: 'auto',
+      boxShadow: '10px 10px 5px 0 #000000bf',
+      WebkitBoxShadow: '10px 10px 5px 0 #000000bf',
+      MozBoxShadow: '10px 10px 5px 0 #000000bf',
+    },
+  };
+
   return (
-    <div className="quote">
+    <div className="quote" style={styles}>
       <div>
         <span>Author: </span>
         {results.author}

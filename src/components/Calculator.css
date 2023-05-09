@@ -34,3 +34,8 @@ button {
 .ColorBtn {
   background-color: rgb(242, 138, 64);
 }
+
+.layoutCaculator {
+  display: flex;
+  justify-content: space-between;
+}
