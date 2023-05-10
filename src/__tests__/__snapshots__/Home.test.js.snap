@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage.js component renders correctly 1`] = `
+<div
+  data-testid="home-component"
+  style={
+    Object {
+      "color": "black",
+      "fontFamily": "poppins, sans-serif",
+      "fontSize": "14px",
+    }
+  }
+>
+  <h3>
+    Welcome to the home page
+  </h3>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime ad, facere accusantium quam fuga tempore! Sequi, autem minima perferendis nulla labore expedita accusamus molestias?
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime ad, facere accusantium quam fuga tempore! Sequi.
+  </p>
+</div>
+`;

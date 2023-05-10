@@ -1,3 +1,4 @@
+import React from 'react';
 const Home = () => {
   const styles = {
     color: 'black',
@@ -5,7 +6,7 @@ const Home = () => {
     fontFamily: 'poppins, sans-serif',
   };
   return (
-    <div style={styles}>
+    <div style={styles} data-testid="home-component">
       <h3>Welcome to the home page</h3>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
