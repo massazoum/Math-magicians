@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Home from '../components/HomePage';
 import renderer from 'react-test-renderer';
+import Home from '../components/HomePage';
 
 describe('Home component', () => {
   test('renders home page content', () => {
@@ -12,13 +12,13 @@ describe('Home component', () => {
     expect(screen.queryByText('Welcome to the home page')).toBeTruthy();
     expect(
       screen.getByText(
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime ad, facere accusantium quam fuga tempore! Sequi, autem minima perferendis nulla labore expedita accusamus molestias?'
-      )
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime ad, facere accusantium quam fuga tempore! Sequi, autem minima perferendis nulla labore expedita accusamus molestias?',
+      ),
     ).toBeTruthy();
     expect(
       screen.getByText(
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime ad, facere accusantium quam fuga tempore! Sequi.'
-      )
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime ad, facere accusantium quam fuga tempore! Sequi.',
+      ),
     ).toBeTruthy();
     // Assert the styling of the component
     const component = screen.getByTestId('home-component');
@@ -29,7 +29,7 @@ describe('Home component', () => {
 });
 
 test('Homepage.js component renders correctly', () => {
- const component = renderer.create(<Home />);
- const tree = component.toJSON();
- expect(tree).toMatchSnapshot();
+  const component = renderer.create(<Home />);
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

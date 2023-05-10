@@ -1,11 +1,10 @@
-import React from "react";
-// import { render,screen } from "@testing-library/react";
-import '@testing-library/jest-dom/extend-expect'
-import Affiche from '../components/ZoumCalculator';
+import React from 'react';
 import renderer from 'react-test-renderer';
+import Affiche from '../components/ZoumCalculator';
 
 test('renders Affiche component correctly', () => {
- const component = renderer.create(<Affiche />);
- const tree = component.toJSON();
- expect(tree).toMatchSnapshot();
+  const tree = renderer
+    .create(<Affiche />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

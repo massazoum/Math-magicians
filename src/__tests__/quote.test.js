@@ -1,11 +1,13 @@
-import React from "react";
-import '@testing-library/jest-dom/extend-expect'
+import React from 'react';
 import renderer from 'react-test-renderer';
+import { act } from 'react-dom/test-utils';
 import DisplayQuote from '../components/quote';
 
 test('DisplayQuote component renders correctly', () => {
- const component = renderer.create(<DisplayQuote />);
- const tree = component.toJSON();
- expect(tree).toMatchSnapshot();
+  act(() => {
+    const tree = renderer
+      .create(<DisplayQuote />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
-
