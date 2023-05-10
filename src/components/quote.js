@@ -1,5 +1,6 @@
 // import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+// import React from 'react';
 import './quote.css';
 // import Affiche from './ZoumCalculator';
 
@@ -46,8 +47,9 @@ export default function DisplayQuote() {
   }
 
   if (error) {
+    const styles = { loading: { fontSize: 'large' } };
     return (
-      <div>
+      <div style={styles} className="loading">
         Error:
         {error.message}
       </div>
