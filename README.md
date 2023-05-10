@@ -112,6 +112,11 @@ soon it will be online
 - Twitter: [@zoumaniguimass1](https://twitter.com/zoumaniguimass1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/zoumtechmassa/)
 
+👤 **BENSON NJUGUNA**
+
+- Twitter: [@bennyjoezz]()
+- LinkedIn: [LinkedIn]()
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
