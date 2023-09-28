@@ -33,7 +33,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖  Math-magicians <a name="about-project"></a>
-This is a calculator project bult by using react in the goal to learn the react library
+This is a calculator project bult by using react in the goal to learn the react library.
 
 ## 🛠 Built With <a name="built-with"></a>
 <ul>
