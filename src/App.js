@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import React, { Component } from 'react';
 import Affiche from './components/ZoumCalculator';
 import DisplayQuote from './components/quote';
 import './components/Calculator.css';

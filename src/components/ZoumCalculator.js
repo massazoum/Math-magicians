@@ -93,7 +93,7 @@ export default function Affiche() {
             +
           </button>
         </div>
-        <div>
+        <div className="btnfinal">
           <button className="zero" type="button" onClick={() => handleClick('0')}>
             0
           </button>

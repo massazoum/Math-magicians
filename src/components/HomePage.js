@@ -10,15 +10,7 @@ const Home = () => {
     <div style={styles} data-testid="home-component">
       <h3>Welcome to the home page</h3>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-        modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime
-        ad, facere accusantium quam fuga tempore! Sequi, autem minima
-        perferendis nulla labore expedita accusamus molestias?
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-        modi ratione in? Nobis explicabo cupiditate doloremque pariatur maxime
-        ad, facere accusantium quam fuga tempore! Sequi.
+      Welcome to Math Magicians, where we invite you to explore the enchanting world of mathematics. Unveil the secrets of numbers, equations, and calculations as you embark on a journey filled with wonder and insight. Whether you're a student, a professional, or simply a curious mind, our platform offers a unique opportunity to dive into the captivating realm of math. From interactive calculators to inspiring quotes, Math Magicians is your gateway to a world where numbers come alive and math becomes magical. Join us on this mathematical adventure, and let's make numbers dance together!
       </p>
     </div>
   );
